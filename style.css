@@ -1,0 +1,253 @@
+/* GLOBAL */
+
+* {
+  font-family: 'Lora', serif;
+  line-height: 180%;
+  color: #000;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+
+}
+
+a, ul, li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.header-nav {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+ 
+}
+
+.header-nav .logo-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.header-nav .nav-itens {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.header-nav .nav-itens li a:hover {
+font-weight: 600;
+}
+
+
+/* MAIN */
+
+main h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+
+}
+
+.main-content {
+  margin-bottom: 100px;
+}
+
+/* ABOUT */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  display: block;
+}
+
+.about-introduction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: justify;
+  gap: 80px;
+  margin-bottom: 50px;
+}
+
+.about-introduction-text p {
+margin-bottom: 16px;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.skills-subtitle {
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 700;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.about-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+
+.about-skills-item {
+  max-width: 300px;
+}
+
+
+.about-skills-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* ACHIEVEMENTS */
+
+.achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  display: none;
+  
+}
+
+.achievements-introduction {
+  margin-bottom: 20px;
+}
+
+.achievements-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 50px;
+
+}
+
+.achievements-links img {
+  width: 350px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.achievements-links img:hover {
+  transform: scale(1.2);
+}
+
+/* GOALS */
+
+.goals {
+  display: none;
+}
+
+.goals-text {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.goals-text h1 {
+  text-align: center;
+}
+
+.goals img {
+  max-width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  border-top: 1px solid #000;
+}
+
+/* RESPONSIVINESS */
+
+@media (max-width: 750px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .about-skills {
+    margin-bottom: 30px;
+  }
+
+  .achievements-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .goals-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  }
+
+
+  @media (max-width: 450px) {
+
+    .container {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    header {
+      padding-bottom: 50px;
+    }
+
+    .header-nav .nav-itens {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .about-introduction {
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+    }
+  }
